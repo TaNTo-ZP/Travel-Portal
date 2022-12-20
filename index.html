@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/libs/slick/slick.css">
+  <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="/img/logo.png" alt="logo">
+            <img src="/img/logo2.png" class="logo-none" alt="logo">
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="#!">How It Works</a></li>
+            <li><a href="#!">Plan Your Trip</a></li>
+            <li><a href="#!">Destinations</a></li>
+            <li><a href="#!">Travel Stories</a></li>
+          </ul>
+          <!-- pop-up start -->
+          <div class="button">
+            <button class="main-btn" id="open-pop-up">Login</button>
+          </div>
+          <!-- pop-up end -->
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <!-- pop-up start -->
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up-container">
+        <div class="pop-up-body" id="pop-up-body">
+          <p>Create account</p>
+          <form action="#!">
+            <div class="email">
+              <label for="email">E-mail</label>
+              <input type="text" id="email">
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input type="text" id="password">
+            </div>
+            <button>Sign Up</button>
+          </form>
+          <div class="pop-up-close" id="pop-up-close">&#10006</div>
+        </div>
+      </div>
+    </div>
+    <!-- pop-up end -->
+  </header>
+
+  <main class="main">
+
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome__content">
+          <h1>Explore the beauty of the World</h1>
+          <p class="welcome-descr">Receive personalized recommendations for countries, hotels, activities and more</p>
+          <form class="welcome-form">
+            <input type="text" placeholder="What would you like to do?">
+            <button type="submit" class="main-btn">Start Planning</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <div class="steps__content">
+          <h2 class="steps-heading">3 STEPS TO THE PERFECT TRIP</h2>
+          <div class="steps__wrap">
+            <div class="steps__content-item">
+              <img src="/img/icon1.png" alt="icon">
+              <p class="steps__item-descr">Tell us what you want to do</p>
+            </div>
+            <div class="steps__content-item">
+              <img src="/img/icon3.png" alt="icon">
+              <p class="steps__item-descr">We will give you recommendations</p>
+            </div>
+            <div class="steps__content-item">
+              <img src="/img/icon2.png" alt="icon">
+              <p class="steps__item-descr">Share us preferable dates </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <h2 class="slider-heading">POPULAR DESTINATIONS</h2>
+        <div class="main-slider">
+          <div>
+            <figure>
+              <img class="slider-img" src="/img/slide1.png" alt="slide">
+              <figcaption>Spain</figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img class="slider-img" src="/img/slide2.png" alt="slide">
+              <figcaption>Japan</figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img class="slider-img" src="/img/slide3.png" alt="slide">
+              <figcaption>USA</figcaption>
+            </figure>
+          </div>
+        </div>
+        <button href="#!" class="main-btn btn-bg">Find More</button>
+      </div>
+    </section>
+
+    <h2 class="slider-heading travel-heading">TRAVEL STORIES</h2>
+    <section class="travel">
+      <div class="container">
+        <div class="travel__content">
+          <div class="travel__wrap">
+            <img src="/img/blog-img.png" class="blog-img" alt="blog photo">
+            <div class="travel__item">
+              <h2 class="travel-heading-h2">10 Photos of Attractive Thailand</h2>
+              <p class="travel-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#!" class="text-link">Read More</a>
+            </div>
+          </div>
+          <div class="travel__wrap">
+            <img src="/img/blog-img2.png" class="blog-img" alt="blog photo">
+            <div class="travel__item">
+              <h2 class="travel-heading-h2">Canyonlands National Park, Utah</h2>
+              <p class="travel-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#!" class="text-link">Read More</a>
+            </div>
+          </div>
+          <div class="travel__wrap">
+            <img src="/img/blog-img3.png" class="blog-img" alt="blog photo">
+            <div class="travel__item">
+              <h2 class="travel-heading-h2">I left my heart in the Mountains!</h2>
+              <p class="travel-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#!" class="text-link">Read More</a>
+            </div>
+          </div>
+          <div class="travel__wrap">
+            <img src="/img/blog-img4.png" class="blog-img" alt="blog photo">
+            <div class="travel__item">
+              <h2 class="travel-heading-h2">The Longest journey in my life!</h2>
+              <p class="travel-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#!" class="text-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <button href="#!" class="main-btn btn-bg">See More</button>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <img src="/img/logo.png" alt="logo">
+        <p class="copy">All Rights Reserved © Travel Portal</p>
+        <div class="icon__wrap">
+          <a href="#!"><img src="/img/inst.png" alt="icon instagram"></a>
+          <a href="#!"><img src="/img/youtube.png" alt="icon youtube"></a>
+          <a href="#!"><img src="/img/twitter.png" alt="icon twitter"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/libs/jquery.min.js"></script>
+  <script src="/libs/slick/slick.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
