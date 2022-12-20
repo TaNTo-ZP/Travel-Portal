@@ -1,0 +1,144 @@
+/* *===== Hamburger =====* */
+
+@media (max-width: 1000px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background: #fff;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 91px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px;
+    /* overflow: auto; */
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:active {
+    background: rgba(122, 82, 179, 0.1);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+
+  .logo-none {
+    display: none;
+  }
+
+  .menu li {
+    margin-left: 0;
+}
+}
+
+
+@media (max-width: 1000px) {
+  .travel-heading-h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 701px) {
+  .travel__wrap {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto 50px;
+  }
+
+  .blog-img {
+    width: auto;
+    height: 100%;
+  }
+
+  .travel__item {
+    margin-left: 0;
+  }
+
+  .travel-descr {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 701px) {
+  .footer__content {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* *===== Steps =====* */
+
+@media (max-width: 540px) {
+  .steps__wrap {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
